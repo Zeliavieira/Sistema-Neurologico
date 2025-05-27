@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema Nervoso Humano</title>
+  <link rel="icon" href="IMAGENS/Adobe Express - file.png" type="image/png"> <!-- ícone da aba -->
+
+  <style>
+    body {
+     font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+    }
+
+    header {
+  background-color: #29b6f6;
+  color: white;
+  padding: 0;
+  margin: 0 auto; /* Centraliza o header na página */
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  background-image: url('IMAGENS/Adobe Express - file.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  max-width: 800px;
+  height: 350px;
+  display: block;
+}
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    .imagem {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .imagem img {
+      width: 90%;
+      max-width: 400px;
+      border: 4px solid #29b6f6;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #f1f8e9;
+      border-left: 8px solid #81c784;
+      border-radius: 10px;
+      display: none;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .section img {
+      max-width: 60%;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+
+    .btn {
+      background-color: #29b6f6;
+      color: white;
+      border: none;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0288d1;
+    }
+
+    footer {
+      background-color: #29b6f6;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      margin-top: 30px;
+      text-transform: uppercase;
+    }
+
+    .imagem-dupla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.bloco-img-texto {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.bloco-img-texto img {
+  width: 100%;
+  border-radius: 10px;
+  border: 4px solid #29b6f6;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.bloco-img-texto p {
+  background-color: #e0f2f1;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .btn-link:hover {
+    background-color: #45a049;
+  }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Descubra o Sistema Nervoso!</h1>
+    
+  </header>
+
+</div>
+
+  <div style="text-align:center;">
+    <p>CLIQUE NOS BOTÕES PARA APRENDER DE FORMA DIVERTIDA! 🎉</p>
+    <button class="btn" onclick="mostrar('s1')">🧠 Introdução</button>
+    <button class="btn" onclick="mostrar('s2')">⚙️ Fisiopatologia</button>
+    <button class="btn" onclick="mostrar('s3')">🚨 Sintomas</button>
+    <button class="btn" onclick="mostrar('s4')">🩺 Diagnóstico</button>
+    <button class="btn" onclick="mostrar('s5')">💊 Tratamento</button>
+    <button class="btn" onclick="mostrar('s6')">👩‍⚕️ Cuidados de Enfermagem</button><br>
+    <button class="btn" id="btnPerguntas">🧑‍🏫❔ Perguntas</button>
+    
+
+      </a>   
+  </div>
+
+  <div class="section" id="s1">
+    <h2>🧠 O que é o sistema nervoso?</h2>
+    <div class="imagem-dupla">
+      <div class="bloco-img-texto">
+        <img src="IMAGENS/WhatsApp Image 2025-05-24 at 17.37.05.jpeg" alt="Sistema Nervoso Central">
+        <p><strong>Sistema Nervoso Central:</strong> divide-se estruturalmente em Sistema Nervoso Central (SNC) e Sistema Nervoso Periférico (SNP). O SNC é formado pelo encéfalo (cérebro, cerebelo e tronco encefálico) e pela medula espinhal, servindo como centro de integração e comando das funções corporais. .</p>
+      </div>
+      <div class="bloco-img-texto">
+        <img src="IMAGENS/Blue and Purple Minimal Organization Chart.png" alt="Sistema Nervoso Periférico">
+        <p><strong>Sistema Nervoso Periférico:</strong>compõe-se de nervos cranianos e espinhais que conduzem informações entre o SNC e o restante do corpo, incluindo fibras sensoriais (dos receptores ao SNC) e motoras (do SNC aos músculos)..</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="section" id="s2">
+    <h2>⚙️ Fisiopatologia</h2>
+    <p> As doenças do sistema nervoso são uma categoria ampla de condições que afetam o cérebro, a medula espinhal e os nervos. Elas podem ter uma grande variedade de causas. Aqui vamos citar apenas 4 categorias didáticas de doenças neurológicas: doenças degenerativas do sistema nervoso, doenças do sistema nervoso periférico, doenças do sistema nervoso autônomo e doenças infecciosas. <BR></BR> <br>DOENÇAS DEGENERATIVAS DO SISTEMA NERVOSO: <BR> <BR>
+        </BR>As doenças degenerativas do sistema nervoso são condições caracterizadas pela degeneração progressiva das células nervosas. Essas doenças são tipicamente crônicas e progressivas, o que significa que os sintomas pioram com o tempo. A degeneração das células nervosas leva à perda das funções que elas desempenham, resultando em uma série de problemas motores, cognitivos, sensoriais e emocionais. Estão frequentemente associadas ao envelhecimento, embora algumas possam começar mais cedo na vida. Entre as principais, estão: Doença de Alzheimer, doença de Parkinson e esclerose lateral amiotrófica (ELA). <BR></BR>
+        
+       DOENÇAS DO SNP: <BR></BR>
+        Envolvem condições que afetam os nervos fora do cérebro e da medula espinhal. O SNP é responsável por conectar o sistema nervoso central aos músculos, órgãos e pele, e sua função é essencial para o movimento, sensação e a comunicação entre o corpo e o cérebro. Quando é afetado, isso pode resultar em uma variedade de sintomas, como fraqueza muscular, dor, formigamento, perda de sensação e dificuldade de coordenação. Alguns exemplos importantes são: Síndrome de Guillain-Barré, Neuralgia do Trigêmeo e Neuropatia Periférica. <BR></BR>
+        
+        DOENÇAS DO SNA: <BR></BR>
+        É uma parte fundamental do sistema nervoso responsável pelo controle involuntário de várias funções essenciais do corpo, como a frequência cardíaca, a pressão arterial, a respiração, a digestão e a temperatura corporal. Ele é composto por duas divisões principais: o sistema nervoso simpático, que prepara o corpo para a resposta ao estresse, e o sistema nervoso parassimpático, que ajuda a manter o corpo em repouso e promove a recuperação e o relaxamento. Podemos citar algumas causas como: Síndrome de Horner, neuropatias autonômicas, atrofia de múltiplos sistemas.
+        
+        <BR></BR>DOENÇAS INFECCIOSAS DO S.N: <BR></BR>
+        As doenças infecciosas do sistema nervoso envolvem a infecção do cérebro, medula espinhal ou nervos periféricos por micro-organismos como vírus, bactérias, fungos ou parasitas. Entre as principais, estão: Meningite e encefalite.</p>
+        <img src="IMAGENS/PARK.jfif" alt="Neurônios">
+
+    </div>
+
+  <div class="section" id="s3">
+    <h2>🚨 Sinais e Sintomas</h2>
+    <p>Os sintomas de doenças no sistema nervoso podem variar bastante, dependendo da região afetada. Entre os sintomas mais comuns estão: dores de cabeça intensas e frequentes, convulsões, perda de memória, fraqueza muscular, dificuldade para falar ou se mover, alterações de humor, confusão mental e formigamentos.</p>
+    <img src="IMAGENS/SINAIS E SINTOMAS.jpeg">
+
+</div>
+
+  <div class="section" id="s4">
+    <h2>🩺 Diagnóstico</h2>
+    <p>O diagnóstico de doenças neurológicas é feito através da observação clínica e do uso de exames como ressonância magnética, tomografia computadorizada, eletroencefalograma (EEG) e exames de sangue. A anamnese detalhada e os testes neurológicos realizados pelo médico são essenciais para detectar alterações no funcionamento do sistema nervoso.</p>
+    <img src="IMAGENS/diagnostico.png" alt="Dor de cabeça">
+
+</div>
+
+  <div class="section" id="s5">
+    <h2>💊 Tratamento</h2>
+    <p>O tratamento para doenças do sistema nervoso varia conforme a condição. Pode incluir o uso de medicamentos anticonvulsivantes, analgésicos, antidepressivos, fisioterapia, terapia ocupacional, acompanhamento psicológico e até intervenções cirúrgicas. A reabilitação neurológica também é fundamental para melhorar a qualidade de vida dos pacientes.</p>
+    <img src="IMAGENS/tratamento.jpeg" alt="Dor de cabeça">
+  
+</div>
+
+  <div class="section" id="s6">
+    <h2>👩‍⚕️ Cuidados de Enfermagem</h2>
+    <p>Os cuidados de enfermagem incluem a observação contínua do paciente, administração correta de medicamentos, apoio emocional à pessoa e à família, prevenção de complicações como úlceras de pressão e infecções, além de estimular a comunicação e a mobilidade. O enfermeiro deve seguir planos de cuidados específicos para cada diagnóstico neurológico, promovendo o conforto e a segurança do paciente.</p>
+    <img src="IMAGENS/enf.png" alt="Dor de cabeça">
+
+</div>
+
+  
+</div>
+
+  <footer>
+    <p>🌟&copy; 2025 | Projeto Educativo sobre o Sistema Nervoso | Desenvolvido por Erica da Cruz Pereira Santos, 
+      Marjore Evelin do Carmo Lima, 
+      Maria zelia Vieira Santos da Silva, 
+      Maristela santos da Silva, 
+      Raíssa Julia Silva dos Santos. Com orientação da Professora Anelita.🌟</p>
+    
+  </footer>
+
+  <script>
+     function mostrar(id) {
+    // Esconde todas as seções
+    const secoes = document.querySelectorAll('.section');
+    secoes.forEach(secao => secao.style.display = 'none');
+
+    // Mostra a seção clicada
+    document.getElementById(id).style.display = 'block';
+  }
+  document.getElementById('btnPerguntas').addEventListener('click', function() {
+    window.open('Perguntas.html', '_blank');
+  });
+  </script>
+
+</body>
+</html>

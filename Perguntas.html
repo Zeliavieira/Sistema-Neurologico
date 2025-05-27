@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Sistema Nervoso</title>
+  <link rel="icon" href="IMAGENS/title.png" type="image/png">
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      background-color: #f5f5f5;
+    }
+    .pergunta {
+      margin-bottom: 30px;
+      padding: 15px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    .opcao {
+      background-color: #f0f0f0;
+      padding: 10px;
+      margin-top: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .opcao:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Quiz: Sistema Nervoso</h1>
+
+  <div class="pergunta" id="q1">
+    <p><strong>1. O que compõe o Sistema Nervoso Central?</strong></p>
+    <div class="opcao" onclick="verificar(this, true)">Encéfalo e Medula Espinhal</div>
+    <div class="opcao" onclick="verificar(this, false)">Coração e Vasos Sanguíneos</div>
+    <div class="opcao" onclick="verificar(this, false)">Fígado e Intestino</div>
+  </div>
+
+  <div class="pergunta" id="q2">
+    <p><strong>2. Qual a função do Sistema Nervoso Periférico?</strong></p>
+    <div class="opcao" onclick="verificar(this, false)">Controlar os batimentos cardíacos</div>
+    <div class="opcao" onclick="verificar(this, false)">Produzir hormônios</div>
+    <div class="opcao" onclick="verificar(this, true)">Levar informações entre o SNC e o corpo</div>
+  </div>
+
+  <div class="pergunta" id="q3">
+    <p><strong>3. Qual dessas é uma doença degenerativa do sistema nervoso?</strong></p>
+    <div class="opcao" onclick="verificar(this, true)">Doença de Alzheimer</div>
+    <div class="opcao" onclick="verificar(this, false)">Gripe</div>
+    <div class="opcao" onclick="verificar(this, false)">Cárie</div>
+  </div>
+
+  
+
+  <div class="pergunta" id="q4">
+    <p><strong>4. Qual dos itens abaixo representa um cuidado de enfermagem fundamental em pacientes com doenças neurológicas?</strong></p>
+    <div class="opcao" onclick="verificar(this, true)">Observar sinais de alteração no nível de consciência</div>
+    <div class="opcao" onclick="verificar(this, false)">Oferecer apenas líquidos a cada 8 horas</div>
+    <div class="opcao" onclick="verificar(this, false)">Deixar o paciente sozinho no leito</div>
+  </div>
+
+  <script>
+    function verificar(elemento, correta) {
+      const opcoes = elemento.parentElement.querySelectorAll('.opcao');
+      opcoes.forEach(opcao => {
+        opcao.onclick = null;
+        opcao.style.pointerEvents = "none";
+      });
+
+      if (correta) {
+        elemento.style.backgroundColor = "#c8e6c9";
+        elemento.innerHTML += " ✅ Acertou!";
+      } else {
+        elemento.style.backgroundColor = "#ffcdd2";
+        elemento.innerHTML += " ❌ Errou!";
+      }
+    }
+  </script>
+
+</body>
+</html>
